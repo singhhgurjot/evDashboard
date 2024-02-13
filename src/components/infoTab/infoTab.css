@@ -1,0 +1,44 @@
+.infoTab {
+    background-color: #1F2022;
+    width: 20rem; 
+    height: 7rem;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    font-size: calc(16px + 0.25vw); 
+  
+  }
+  .infoTab:hover {
+    box-shadow: 0 0 5px 3px rgba(86, 160, 78, 1);
+  }
+  .circleContainer {
+    height: 5rem;
+    width: 5rem; 
+    background-color: #70cf97;
+    border-radius: 50%;
+    margin-left: 6%;
+  }
+  
+  .image {
+    margin-right: 6%;
+    height: 50px; 
+    width: 50px;
+  }
+  
+  .tabTitle {
+    flex: 1; 
+    color: white;
+    padding-top:3%;
+  }
+  
+  .title {
+    font-size: clamp(1.1rem, 1.7vw, 1rem); 
+  }
+  
+  .tabValue {
+    font-size: clamp(2rem, 3vw, 2rem); 
+    font-weight: bold;
+  }
