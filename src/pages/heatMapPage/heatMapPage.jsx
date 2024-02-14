@@ -10,6 +10,7 @@ import CarComponent from '../../components/carComponent/carComponent.jsx'
 import TreeMapChart from '../../components/mosaicPlot/mosaicPlot.jsx'
 import Table from "../tablePage/tablePage.jsx";
 export default function heatMapPage() {
+
   return (
  <>
  <div className='flex flex-col outerDiv'>

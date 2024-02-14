@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import "./tablePage.css"
+import { FaSort } from 'react-icons/fa';
 const VehicleLevelListTable = () => {
     
     const [data, setData] = useState([
@@ -237,7 +238,7 @@ const VehicleLevelListTable = () => {
                 <tr>
                     {Object.keys(data[0]).map((column) => (
                         <th className="text-xs text-white uppercase" key={column} onClick={() => sortData(column)}>
-                            {column} 
+                            <div className='flex items-center gap-1'>{column} {<FaSort />}</div>
                         </th>
                     ))}
                 </tr>
