@@ -2,19 +2,16 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import InfoTab from './components/infoTab/infoTab'
+import {Routes,Route} from 'react-router-dom'
+import HeatMapPage from "./pages/heatMapPage/heatMapPage.jsx"
+
 function App() {
 
 
   return (
- <>
- <div className='flex justify-between'>
- <InfoTab></InfoTab>
- <InfoTab></InfoTab>
- <InfoTab></InfoTab>
- <InfoTab></InfoTab>
- </div>
- </>
+<Routes>
+  <Route path='/' element={<HeatMapPage/>} />
+</Routes>
   )
 }
 

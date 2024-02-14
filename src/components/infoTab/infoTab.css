@@ -1,13 +1,13 @@
 .infoTab {
     background-color: #1F2022;
     width: 20rem; 
-    height: 7rem;
+    height: 5rem;
     border-radius: 20px;
     margin: auto;
     margin-top: 50px;
     display: flex;
     align-items: center;
-    justify-content: space-between; 
+    
     font-size: calc(16px + 0.25vw); 
   
   }
@@ -15,30 +15,86 @@
     box-shadow: 0 0 5px 3px rgba(86, 160, 78, 1);
   }
   .circleContainer {
-    height: 5rem;
-    width: 5rem; 
+    height: 4rem;
+    width: 4rem; 
     background-color: #70cf97;
     border-radius: 50%;
     margin-left: 6%;
   }
-  
   .image {
-    margin-right: 6%;
-    height: 50px; 
-    width: 50px;
+
+ object-fit: contain;
+    height: 70%;
+    width: 75%;
+   
   }
   
   .tabTitle {
     flex: 1; 
     color: white;
     padding-top:3%;
+
   }
   
   .title {
-    font-size: clamp(1.1rem, 1.7vw, 1rem); 
+    font-size: clamp(0.9rem, 1.5vw, 1rem); 
   }
   
   .tabValue {
-    font-size: clamp(2rem, 3vw, 2rem); 
+    font-size: clamp(1.5rem, 2.5vw, 2rem); 
     font-weight: bold;
   }
+    .battery {
+      position: relative;
+      background-color: #1F2022;;
+      border-radius: 20px;
+      overflow: hidden;
+      background-color: #1F2022;
+        width: 20rem;
+        height: 5rem;
+        border-radius: 20px;
+        margin: auto;
+        margin-top: 50px;
+        display: flex;
+        align-items: center;
+    }
+  
+    .battery::before {
+      content: '';
+     
+      top: 0;
+      left: 0;
+      width: 50%;
+      height: 100%;
+      background: linear-gradient(to right, #4CAF50, #4CAF50 50%, transparent 50%, transparent);
+      background-size: 200% 100%;
+      border-radius: 5px 5px 0 0;
+      animation: flow 1s linear 1;
+      /* Added linear timing function */
+    }
+  
+    @keyframes flow {
+      0% {
+        background-position: 100% 50%;
+      }
+  
+      100% {
+        background-position: 0 50%;
+      }
+    }
+        .batteryTabTitle {
+          flex: 1;
+          color: white;
+          padding-top: 3%;
+         
+          margin-left: 50%;
+        
+        }
+                    .batteryCircleContainer {
+                      height: 4rem;
+                      width: 4rem;
+                      
+                      border-radius: 50%;
+                    
+                     
+                    }
