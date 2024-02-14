@@ -194,6 +194,19 @@ const VehicleLevelListTable = () => {
             return row['vehicle  Id'].toLowerCase().includes(searchTerm.toLowerCase()) ||
                 row['vendor  Name'].toLowerCase().includes(searchTerm.toLowerCase());
         })
+        if(filtered.length==0) {   
+            setFilteredData([{
+                "vehicle  Id": "KA3690",
+                "no  Of  Trips": 369,
+                "trip  Kms": 6543,
+                "average  Trips  Per  Day": 3,
+                "average  Kms  Per  Trip": 17.6,
+                "average  Daily  Work  Hours": 6,
+                "average  Charging  Time (Hrs)": 2.3,
+                "co2  Emissions  Saved": 123,
+                "vendor  Name": "LMN Travels"
+            },]);
+        }
         setFilteredData(filtered);
     };
     
@@ -213,11 +226,12 @@ const VehicleLevelListTable = () => {
         <div>
             <input
                 type="text"
-                className='appearance-none block bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500'
+                className='mb-5 ipt appearance-none block bg-gray-200 text-gray-700 border rounded-full border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500'
                 placeholder="Search by vehicle ID or vendor name"
                 value={searchTerm}
                 onChange={handleSearch}
             />
+            {filteredData.length>0 ?
         <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400" >
             <thead className='text-xs  uppercase '>
                 <tr>
@@ -239,18 +253,19 @@ const VehicleLevelListTable = () => {
             </tbody>
                 <tfoot style={{verticalAlign:"bottom"}}>
                     <tr className='foot text-white'>
-                        <td>Sum</td>
-                        <td>$180</td>
-                        <td>Sum</td>
-                        <td>$180</td>
-                        <td>Sum</td>
-                        <td>$180</td>
-                        <td>Sum</td>
-                        <td>$180</td>
-                        <td>$180</td>
+                        <td>10,000</td>
+                        <td>450</td>
+                        <td>1684007</td>
+                        <td>11</td>
+                        <td>74</td>
+                        <td>8</td>
+                        <td>8</td>
+                        <td>780</td>
+                        <td>5 Vendors</td>
                     </tr>
                 </tfoot>
-        </table>
+        </table>:<div className='text-white ml-3 text-xl mb-5 '>No data found</div>
+}
         </div>
     );
 };
