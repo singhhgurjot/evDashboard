@@ -1,5 +1,19 @@
 .outerDiv{
- height: 100vh;
- width: 100vw;
-    background-color: white;
+    justify-content: space-between;
+    width: 100vw;
+}
+.mapContainer{
+    background-color: #1F2022;
+    width:72vw;
+    border-radius: 20px;
+    margin-right: 1%;
+}
+.left{
+margin-left: 2%;
+}
+.mapTitle{
+    color:white;
+}
+.tableContainer{
+    height:100%;
 }

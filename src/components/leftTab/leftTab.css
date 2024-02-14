@@ -1,0 +1,21 @@
+.leftTab{
+    height:55vh;
+    width: 20rem;
+    background-color: #1F2022;
+    border-radius: 20px;
+    
+}
+  .squareContainer {
+      height: 4rem;
+      width: 4rem;
+      background-color: #70cf97;
+      border-radius:20%;
+      margin-left: 6%;
+  }
+        .squareContainer1 {
+            height: 4rem;
+            width: 4rem;
+            background-color: #70cf97;
+            border-radius: 20%;
+            margin-left: 6%;
+        }

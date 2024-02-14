@@ -1,0 +1,16 @@
+.infoTab2{
+    background-color: #1F2022;
+    width: 20rem;
+    height: 8rem;
+    border-radius: 20px;
+    margin-top: 1%;
+    margin: auto;
+    font-size: calc(16px + 0.25vw);
+
+}
+.cars{
+  object-fit: contain;
+  height: 9rem;
+  transform:scalex(-1);
+  margin-left:7%;
+}

@@ -1,0 +1,27 @@
+/* styles.css */
+table {
+    width: 80%;
+    border: 1px solid #ddd;
+    padding: 10px;
+    height:100%;
+}
+
+th {
+    background-color: #56A04E;
+    padding: 8px;
+    
+}
+th,td{
+    border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+}
+tr:nth-child(even) {
+    background-color: #192515;
+}
+id{
+    color:white;
+}
+.foot{
+    background-color: #56A04E;
+}
